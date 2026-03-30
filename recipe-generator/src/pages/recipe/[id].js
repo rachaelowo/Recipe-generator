@@ -1,6 +1,5 @@
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
-import RecipeDetail from '../../components/RecipeDetail';
 import Navbar from '../../components/navbar';
 
 const RecipePage = () => {
@@ -22,12 +21,6 @@ const RecipePage = () => {
   return (
     <div>
       <Navbar />
-      {recipe ? (
-        <RecipeDetail recipe={recipe} />
-      ) : (
-        <p style={{ textAlign: 'center', marginTop: '2rem' }}>Loading recipe...</p>
-      )}
-    </div>
   );
 };
 
